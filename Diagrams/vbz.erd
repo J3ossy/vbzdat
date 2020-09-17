@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="vbz.erd">
+	<entities>
+		<data-source id="mysql5-1746ec60f34-3914f7fd2637c6f3">
+			<entity id="1" name="fahrzeiten_soll_ist" fq-name="vbzdat.fahrzeiten_soll_ist" order="0" x="167" y="33">
+				<path name="vbzdat"/>
+			</entity>
+			<entity id="2" name="haltepunkt" fq-name="vbzdat.haltepunkt" order="1" border-width="3" x="651" y="537">
+				<path name="vbzdat"/>
+			</entity>
+			<entity id="3" name="haltestelle" fq-name="vbzdat.haltestelle" order="2" x="677" y="215">
+				<path name="vbzdat"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="fahrzeiten_soll_ist_FK" fq-name="vbzdat.fahrzeiten_soll_ist.fahrzeiten_soll_ist_FK" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="fahrzeiten_soll_ist_FK_1" fq-name="vbzdat.fahrzeiten_soll_ist.fahrzeiten_soll_ist_FK_1" type="fk" pk-ref="2" fk-ref="1"/>
+		<relation name="haltepunkt_FK" fq-name="vbzdat.haltepunkt.haltepunkt_FK" type="fk" pk-ref="3" fk-ref="2"/>
+	</relations>
+</diagram>
