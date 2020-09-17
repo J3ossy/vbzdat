@@ -1,6 +1,7 @@
 # vbzdat
 
 Aufgabe 1
+
 ![ERD](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%206.PNG)
 
 Aufgabe 2
