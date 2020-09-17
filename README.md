@@ -44,3 +44,4 @@ ORDER By seq_von
 LIMIT 40000;
 ```
 
+[Bild Aufgabe 7](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%207.PNG)
