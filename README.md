@@ -1,8 +1,7 @@
 # vbzdat
 
 Aufgabe 1
-
-
+(ERD)[./assets/Aufgabe6.png]
 
 Aufgabe 2
 
