@@ -45,3 +45,11 @@ LIMIT 40000;
 ```
 
 ![Bild Aufgabe 7](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%207.PNG)
+
+
+Aufgabe 8
+```sql
+SELECT * FROM linie l WHERE linie = '4'
+```
+
+![Bild Aufgabe 8](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%208.PNG)
