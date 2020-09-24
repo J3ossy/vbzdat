@@ -105,3 +105,5 @@ ALTER TABLE ankunftszeiten ADD id INT PRIMARY KEY AUTO_INCREMENT FIRST;
 ```
 
 
+![Bild Aufgabe 9](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%209.PNG)
+
