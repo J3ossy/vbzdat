@@ -1,11 +1,13 @@
 # vbzdat
 
 Aufgabe 6
+Erstellen Sie ein Entity-Relation-Ship Diagramm (z.B. mit DBeaver)
 
 ![ERD](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%206.PNG)
 
 Aufgabe 7
-
+Für Ihre Linie und einen bestimmten Fahrweg und Datum:
+Abgabe: Abfrage (SQL) und Abfrageergebnis
 
 ```sql
 
@@ -44,18 +46,27 @@ ORDER By seq_von
 LIMIT 40000;
 ```
 
+Ergebnis:
+
 ![Bild Aufgabe 7](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%207.PNG)
 
 
 Aufgabe 8
+Erstellen Sie aus der Linientabelle eine Abfrage mit allen Varianten Ihrer Linie
+Abgabe: Abfrage (SQL) und Abfrageergebnis.
+
 ```sql
 SELECT * FROM linie l WHERE linie = '4'
 ```
+
+Ergebnis
 
 ![Bild Aufgabe 8](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%208.PNG)
 
 
 Aufgabe 9
+Erstellen Sie aus der Ankunftszeitentabelle eine Abfrage für Ihre Linie und einen bestimmten Fahrweg und Datum Linie.
+Abgabe: Abfrage (SQL) und Abfrageergebnis
 
 ```sql
 
@@ -104,12 +115,14 @@ WHERE
 ALTER TABLE ankunftszeiten ADD id INT PRIMARY KEY AUTO_INCREMENT FIRST;
 ```
 
+Ergebnis
 
 ![Bild Aufgabe 9](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%209.PNG)
 
 
 Aufgabe 10 
-
+Abfrage für Ihre Linie mit den Verspätungen gemäss Aufgabestellung.
+Abgabe: Abfrage (SQL) und Abfrageergebnis
 
 ```sql
 SELECT DISTINCT 
@@ -136,7 +149,7 @@ INNER JOIN vbzdat.linie l ON
  LIMIT 20;
  
  ```
- Aufgabe 10
+Ergebnis
  
  ![Bild Aufgabe 10](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2010.PNG)
  
@@ -145,6 +158,7 @@ INNER JOIN vbzdat.linie l ON
  ![Bild Aufgabe 10](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2010_1.PNG)
  
  Aufgabe 11
+ PrintScreen des Export Assistenten, CSV-Datei-Inhalt und Print-Screen der Karte.
  
 ```sql 
  SELECT DISTINCT 
@@ -164,13 +178,21 @@ INNER JOIN vbzdat.haltestelle h2 ON
 WHERE
     l.fw_no = 1;
   ```
- Export
+Export
  
-  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_1.PNG)
-  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_2.PNG)
-  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_3.PNG)
-  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_4.PNG)
+ ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_1.PNG)
+ ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_2.PNG)
+ ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_3.PNG)
+ ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_4.PNG)
   
-  Visualisierung 
-  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_5.PNG)
+ CSV Dateiinhalt 
+  
+ ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_csv.PNG)
+  
+ Visualisierung 
+ 
+ ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_5.PNG)
+ 
+ Aufgabe 12
+ 
  
