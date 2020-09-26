@@ -107,3 +107,36 @@ ALTER TABLE ankunftszeiten ADD id INT PRIMARY KEY AUTO_INCREMENT FIRST;
 
 ![Bild Aufgabe 9](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%209.PNG)
 
+
+Aufgabe 10 
+
+
+```sql
+SELECT DISTINCT 
+    a.id,
+    a.haltepunkt_id,
+    h2.halt_lang,
+    h.GPS_Latitude,
+    h.GPS_Longitude,
+    a.fahrt_id,
+    l.linie,
+    a.datumzeit_ist_an,
+    a.datumzeit_soll_an,
+    a.delay
+FROM
+    vbzdat.ankunftszeiten a
+INNER JOIN vbzdat.haltepunkt h ON
+    a.haltepunkt_id = h.halt_punkt_id
+INNER JOIN vbzdat.haltestelle h2 ON
+    h.halt_id = h2.halt_id
+INNER JOIN vbzdat.linie l ON
+    a.fahrweg_id = l.fahrweg_id
+ ORDER BY 
+ 	delay DESC 
+ LIMIT 20;
+ 
+ ```
+ 
+ ![Bild Aufgabe 10](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2010.PNG)
+ 
+ 
