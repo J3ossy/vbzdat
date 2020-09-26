@@ -226,3 +226,38 @@ WHERE
  ### Ergebnis:
  
 ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2012.PNG)
+
+## Aufgabe 12
+Nächste Station Abgabe:
+Abfrage (SQL) und Abfrageergebnis 
+
+```sql  
+ SELECT halt_punkt_id,
+        h.GPS_Latitude,
+        h.GPS_Longitude,      
+        p.distance_unit
+                 * DEGREES(ACOS(LEAST(1.0, COS(RADIANS(p.latpoint))
+                 * COS(RADIANS(h.GPS_Latitude))
+                 * COS(RADIANS(p.longpoint) - RADIANS(h.GPS_Longitude))
+                 + SIN(RADIANS(p.latpoint))
+                 * SIN(RADIANS(h.GPS_Latitude))))) AS distance_in_km
+  FROM haltepunkt  AS h
+  JOIN (
+        SELECT  47.3699111 AS latpoint,  8.5259085 AS longpoint,
+                50.0 AS radius,      111.045 AS distance_unit
+    ) AS p ON 1=1
+  WHERE GPS_Latitude
+     BETWEEN p.latpoint  - (p.radius / p.distance_unit)
+         AND p.latpoint  + (p.radius / p.distance_unit)
+    AND GPS_Longitude 
+     BETWEEN p.longpoint - (p.radius / (p.distance_unit * COS(RADIANS(p.latpoint))))
+         AND p.longpoint + (p.radius / (p.distance_unit * COS(RADIANS(p.latpoint))))
+  ORDER BY distance_in_km
+  LIMIT 4;
+ ```
+ 
+ ### Ergebnis/ Visualisierung der 4 nächsten Stationen
+ 
+
+ ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2013.PNG)
+ 
