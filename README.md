@@ -136,6 +136,7 @@ INNER JOIN vbzdat.linie l ON
  LIMIT 20;
  
  ```
+ Aufgabe 10
  
  ![Bild Aufgabe 10](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2010.PNG)
  
@@ -143,4 +144,33 @@ INNER JOIN vbzdat.linie l ON
  
  ![Bild Aufgabe 10](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2010_1.PNG)
  
+ Aufgabe 11
+ 
+```sql 
+ SELECT DISTINCT 
+    h.GPS_Latitude as lat,
+    h.GPS_Longitude as lng,
+    h2.halt_lang as name,
+    null as color,
+    null as note
+FROM
+    vbzdat.linie l
+INNER JOIN vbzdat.ankunftszeiten a ON
+    l.fahrweg_id = a.fahrweg_id
+INNER JOIN vbzdat.haltepunkt h ON
+    a.haltepunkt_id = h.halt_punkt_id
+INNER JOIN vbzdat.haltestelle h2 ON
+    h.halt_id = h2.halt_id
+WHERE
+    l.fw_no = 1;
+  ```
+ Export
+ 
+  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_1.PNG)
+  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_2.PNG)
+  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_3.PNG)
+  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_4.PNG)
+  
+  Visualisierung 
+  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_5.PNG)
  
