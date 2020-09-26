@@ -203,5 +203,26 @@ WHERE
  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2011_5.PNG)
  
 ## Aufgabe 12
+Pivot Abfrage für Fahrplan	einer	Linie.
+Abgabe: Abfrage (SQL) und Abfrageergebnis
+
+
+```sql  
+ SELECT
+	h2.halt_lang,
+	(cast(a.datumzeit_soll_an as time)) as zeit_soll_an
+FROM 
+	vbzdat.ankunftszeiten a 
+inner join vbzdat.haltepunkt h on 
+	h.halt_punkt_id =a.haltepunkt_id
+inner join vbzdat.haltestelle h2 on 
+	h.halt_id = h2.halt_id 
+WHERE 
+		cast(a.datumzeit_soll_an as DATE) = "2020-01-02"
+ 	and a.fahrt_id in (20001)
+ ORDER BY a.fahrt_id, cast(a.datumzeit_soll_an as time);
+   ```
+   
+ ### Ergebnis:
  
- 
+![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2012.PNG)
