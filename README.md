@@ -139,4 +139,8 @@ INNER JOIN vbzdat.linie l ON
  
  ![Bild Aufgabe 10](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2010.PNG)
  
+ Zusützliche Visualisierung:
+ 
+ ![Bild Aufgabe 10](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2010_1.PNG)
+ 
  
