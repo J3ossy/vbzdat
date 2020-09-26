@@ -56,7 +56,16 @@ Erstellen Sie aus der Linientabelle eine Abfrage mit allen Varianten Ihrer Linie
 Abgabe: Abfrage (SQL) und Abfrageergebnis.
 
 ```sql
-SELECT * FROM linie l WHERE linie = '4'
+SELECT
+    l.fahrweg_id,
+    l.linie,
+    l.richtung,
+    l.fw_no,
+    l.fw_lang
+FROM
+    vbzdat.linie l
+WHERE
+    l.linie = 4;
 ```
 
 ### Ergebnis:
