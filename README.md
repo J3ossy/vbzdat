@@ -266,3 +266,23 @@ Abfrage (SQL) und Abfrageergebnis
 
  ![Bild Aufgabe 13](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2013.PNG)
  
+ 
+## Aufgabe 14
+Distanz zwischen zwei Haltestellen:	
+Abfrage (SQL) und Abfrageergebnis
+
+# Referenzpunkt Bahnhofquai/HB
+
+```sql 
+SELECT 
+  name, 
+   ( 6371 * acos( cos( radians(47.37738) ) * cos( radians( a.lat ) ) 
+   * cos( radians(a.lng) - radians(8.541672)) + sin(radians(47.37738)) 
+   * sin( radians(a.lat)))) AS distance 
+FROM Aufgabe_14 a 
+ORDER BY distance;
+ ```
+ 
+ ### Abfrageergebnis
+ 
+ ![Bild Aufgabe 13](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2014.PNG)
