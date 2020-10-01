@@ -258,7 +258,7 @@ Abfrage (SQL) und Abfrageergebnis
  
  ### Abfrageergebnis
  
- ![Bild Aufgabe 13](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2013_1PNG)
+ ![Bild Aufgabe 13](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2013_1.PNG)
  
  
  ### Visualisierung der 4 nächsten Stationen
