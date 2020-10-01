@@ -285,4 +285,4 @@ ORDER BY distance;
  
  ### Abfrageergebnis
  
- ![Bild Aufgabe 13](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2014.PNG)
+ ![Bild Aufgabe 14](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2014.PNG)
