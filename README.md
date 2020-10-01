@@ -227,7 +227,7 @@ WHERE
  
 ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2012.PNG)
 
-## Aufgabe 12
+## Aufgabe 13
 Nächste Station Abgabe:
 Abfrage (SQL) und Abfrageergebnis 
 
@@ -256,7 +256,12 @@ Abfrage (SQL) und Abfrageergebnis
   LIMIT 4;
  ```
  
- ### Ergebnis/ Visualisierung der 4 nächsten Stationen
+ ### Abfrageergebnis
+ 
+ ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2013._1PNG)
+ 
+ 
+ ### Visualisierung der 4 nächsten Stationen
  
 
  ![Bild Aufgabe 11](https://github.com/J3ossy/vbzdat/blob/master/Bookmarks/Assets/Aufgabe%2013.PNG)
